@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: PlayerMoveChackScene
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 10086261395a8a94dbdad83b90f4713a, type: 3}
+  templateName: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u64CD\u4F5C\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B\u30B7\u30FC\u30F3"
+  description: "\u4E2D\u306B\u4EEE\u306E\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u3042\u308B\u306E\u3067\u305D\u3053\u306B\u4F5C\u3063\u305F\u30B9\u30AF\u30EA\u30D7\u30C8\u3092\u30A2\u30BF\u30C3\u30C1\u3057\u3066\u307F\u3066\u304F\u3060\u3055\u3044"
+  preview: {fileID: 2800000, guid: 56d105feb5816874f9116c9ac65162c4, type: 3}
+  dependencies:
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
+  addToDefaults: 0
