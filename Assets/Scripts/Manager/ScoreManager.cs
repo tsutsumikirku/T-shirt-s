@@ -26,6 +26,7 @@ public class ScoreManager : MonoBehaviour
     {
         _score += score;
         OnScoreChanged?.Invoke(_score);
+        Debug.Log(_score);
     }
     public void Damage(int damage)
     {
