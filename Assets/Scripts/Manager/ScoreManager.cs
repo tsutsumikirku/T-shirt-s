@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 /// <summary>
 /// スコアを管理するクラス(シングルトンパターン)
@@ -9,11 +6,14 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     int _score;//スコア
+    int _defaultHp;
     [SerializeField] private int _hp; //HP
+    [SerializeField] private int _remaing; //残機
     public event Action<int> OnScoreChanged;//スコアが変化したときに呼び出されるイベント
     public static ScoreManager Instance;
     void Awake()
     {
+        _defaultHp = _hp;
         if (!Instance)
         {
             Instance = this;
@@ -31,5 +31,14 @@ public class ScoreManager : MonoBehaviour
     public void Damage(int damage)
     {
         _hp -= damage;
+    }
+    public void PlayerDead()
+    {
+        _remaing--;
+    }
+    void PlayerRestart()
+    {
+        _hp = _defaultHp;
+        _score = 0;
     }
 }
