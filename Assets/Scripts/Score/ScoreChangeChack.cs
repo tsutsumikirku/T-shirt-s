@@ -7,6 +7,6 @@ public class ScoreChangeChack : MonoBehaviour
     // Start is called before the first frame update
     public void ScoreChack(int score)
     {
-        ScoreManager.Instance.AddScore(score);
+        GameDataManager.Instance.AddScore(score);
     }
 }

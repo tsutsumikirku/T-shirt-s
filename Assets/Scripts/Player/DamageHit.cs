@@ -8,8 +8,9 @@ public class DamageHit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            Debug.Log("Hit");
             int hitDamage = collision.gameObject.GetComponent<EnemyBase>().AttackPower;
-            ScoreManager.Instance.Damage(hitDamage);
+            GameDataManager.Instance.Damage(hitDamage);
         }
     }
 }

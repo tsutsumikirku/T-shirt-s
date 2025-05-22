@@ -9,7 +9,7 @@ public class EnemyBase : MonoBehaviour, StepOnInterface
     public int AttackPower { get => _attackPower;}
     public void OnStep()
     {
-        ScoreManager.Instance.AddScore(score);
+        GameDataManager.Instance.AddScore(score);
         Destroy(this.gameObject);
 
     }

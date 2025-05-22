@@ -5,7 +5,7 @@ using UnityEngine;
 public class StepOn : MonoBehaviour
 {
     /// <summary>
-    /// ‚±‚ÌƒIƒuƒWƒFƒNƒg‚ğƒvƒŒƒCƒ„[‚ª“¥‚ñ‚¾‚©‚Ç‚¤‚©
+    /// ï¿½ï¿½ï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ñ‚¾‚ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½
     /// </summary>
     [HideInInspector] public bool playerStepOn;
     [SerializeField] private float _jumpPower = 5f;
@@ -25,21 +25,25 @@ public class StepOn : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            //ToDo: ƒGƒlƒ~[‚Í“¥‚Ü‚ê‚½‚Æ‚«‚É€–S‚·‚é
+            //ToDo: ï¿½Gï¿½lï¿½~ï¿½[ï¿½Í“ï¿½ï¿½Ü‚ê‚½ï¿½Æ‚ï¿½ï¿½Éï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½
             collision.gameObject.GetComponent<StepOnInterface>().OnStep();
             _rb.AddForce(transform.up * _jumpPower, ForceMode2D.Impulse);
             
         }
         else if (collision.gameObject.tag == "Box")
         {
-            //ToDo: ƒ{ƒbƒNƒX‚Í“¥‚Ü‚ê‚½‚É•¡”‰ñâ‚¦‚Ä€–S‚·‚é
+            //ToDo: ï¿½{ï¿½bï¿½Nï¿½Xï¿½Í“ï¿½ï¿½Ü‚ê‚½ï¿½ï¿½ï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½â‚¦ï¿½Äï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½
             collision.gameObject.GetComponent<StepOnInterface>().OnStep();
         }
         else if (collision.gameObject.tag == "Button")
         {
-            //ToDo:ˆê‰ñ”j‰ó‚ÌŒãŠÔŒo‰ßŒã‚ÉÄ¶¬
+            //ToDo:ï¿½ï¿½ï¿½jï¿½ï¿½ÌŒãï¿½ÔŒoï¿½ßŒï¿½ÉÄï¿½ï¿½ï¿½
             collision.gameObject.GetComponent<StepOnInterface>().OnStep();
         }
-
+        else if (collision.gameObject.tag == "Item")
+        {
+            //ToDo:ï¿½ï¿½ï¿½jï¿½ï¿½ÌŒãï¿½ÔŒoï¿½ßŒï¿½ÉÄï¿½ï¿½ï¿½
+            collision.gameObject.GetComponent<StepOnInterface>().OnStep();
+        }
     }
 }

@@ -19,6 +19,7 @@ public class EnemyJump : EnemyBase
     // Update is called once per frame
     void Update()
     {
+        transform.up = _rb.velocity.normalized; 
         count += Time.deltaTime;
         if (count > _jumpCoolTime)
         {

@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorFloorSetting : MonoBehaviour
+public class ColorSetting : MonoBehaviour
 {
     SpriteRenderer _spriteRenderer;
+    [SerializeField] int _colorIndex = 0;
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-    public void SetColor(int colorIndex)
-    {
-        _spriteRenderer.color = ColorManager.Instance.Colors[colorIndex];
+        _spriteRenderer.color = ColorManager.Instance.Colors[_colorIndex];
     }
 }

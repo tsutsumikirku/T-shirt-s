@@ -16,7 +16,7 @@ public class PlayerFall : MonoBehaviour
         _fallPoint = transform.position.y;
         if (_fallPoint < _playerPoint)
         {
-            ScoreManager.Instance.PlayerDead();
+            GameDataManager.Instance.PlayerDead();
         }
         
     }

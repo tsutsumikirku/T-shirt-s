@@ -14,9 +14,11 @@ public class PlayerContainer : MonoBehaviour
     /// Awakeメソッド
     /// 初期化処理を行う
     /// </summary>
-    void Awake()
+    void Start()
     {
         _playerMovers = GetComponents<IPlayerMover>();
+        GameDataManager.Instance.Player = gameObject;
+        GameDataManager.Instance.Init();
     }
     /// <summary>
     /// プレイヤーの移動処理を実行する

@@ -6,7 +6,7 @@ using UnityEngine;
 
     public class EnemyWalk : EnemyBase
     {
-    [SerializeField, Header("ˆÚ“®‘¬“x")]
+    [SerializeField, Header("ï¿½Ú“ï¿½ï¿½ï¿½ï¿½x")]
      private float _MoveSpeed;
 
      private Rigidbody2D _rig;
@@ -25,7 +25,7 @@ using UnityEngine;
         void Update()
         {
             
-            _rig.velocity = (_moveDirection ? Vector2.left : Vector2.right)*_MoveSpeed;
+            _rig.AddForce((_moveDirection ? Vector2.left : Vector2.right)*_MoveSpeed,ForceMode2D.Impulse);
             
         }
 
@@ -37,8 +37,6 @@ using UnityEngine;
             
         }
     }
-
-
     }
 
 

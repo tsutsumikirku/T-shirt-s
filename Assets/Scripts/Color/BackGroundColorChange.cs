@@ -8,6 +8,7 @@ public class BackGroundColorChange : MonoBehaviour
     void Start()
     {
         _colorLength = ColorManager.Instance.Colors.Length;
+        ColorManager.Instance.SetBackGroundColor(_color);
     }
 
     // Update is called once per frame
