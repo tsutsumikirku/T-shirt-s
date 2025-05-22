@@ -8,7 +8,15 @@ public class SoundManager : MonoBehaviour
     public AudioSource audioSource;
     void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void PlaySE(AudioClip clip)
     {
