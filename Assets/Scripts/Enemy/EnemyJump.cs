@@ -9,6 +9,7 @@ public class EnemyJump : EnemyBase
     [SerializeField] private float _jumpForce = 10f;
     [SerializeField] private float _jumpCoolTime = 3.0f;
     private float count = 0;
+
     // Start is called before the first frame update
     void Start()
     {

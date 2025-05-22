@@ -9,6 +9,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     int _score;//スコア
+    [SerializeField] private int _hp; //HP
     public event Action<int> OnScoreChanged;//スコアが変化したときに呼び出されるイベント
     public static ScoreManager Instance;
     void Awake()
@@ -25,5 +26,9 @@ public class ScoreManager : MonoBehaviour
     {
         _score += score;
         OnScoreChanged?.Invoke(_score);
+    }
+    public void Damage(int damage)
+    {
+        _hp -= damage;
     }
 }
