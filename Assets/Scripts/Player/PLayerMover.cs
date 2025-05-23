@@ -5,23 +5,29 @@ using UnityEngine;
 public class PLayerMover : MonoBehaviour, IPlayerMover
 {
     private Rigidbody2D _rb;
+    Animator _animator;
     [SerializeField] private float _moveSpeed=10f;
-    //StartÉÅÉ\ÉbÉh
+    //StartÔøΩÔøΩÔøΩ\ÔøΩbÔøΩh
     void Start()
     {
-        _rb= GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
     public void PlayerUpdate()
     {
-        // ÉvÉåÉCÉÑÅ[ÇÃì¸óÕÅiç∂âEà⁄ìÆÅjÇéÊìæ
         float inputX = Input.GetAxis("Horizontal");
-        // ì¸óÕÇ…âûÇ∂ÇƒâEï˚å¸Ç÷óÕÇâ¡Ç¶ÅAÉLÉÉÉâÉNÉ^Å[Çà⁄ìÆÇ≥ÇπÇ‹Ç∑
-        _rb.AddForce(transform.right * inputX*_moveSpeed*Time.deltaTime, ForceMode2D.Impulse);
+        _rb.AddForce(transform.right * inputX * _moveSpeed * Time.deltaTime, ForceMode2D.Impulse);
+        if (inputX != 0)
+        {
+            if (inputX > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
+        _animator.SetBool("Move", inputX != 0);
     }
 }

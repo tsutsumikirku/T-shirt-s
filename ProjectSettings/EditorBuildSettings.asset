@@ -9,27 +9,33 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
+    path: Assets/Scenes/Stagekorahana.unity
+    guid: 0166cef19144a564593cc38322a15983
+  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 4033d20c8d179814ab7e7a623e82fe27
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/StageSakamoto.unity
+    guid: d04db5e4fc9205d4cb3380cd6f10a119
+  - enabled: 1
+    path: Assets/Scenes/stageShiammura.unity
+    guid: 1ced6fd2d6522a24695162ed1ec0b590
+  - enabled: 1
+    path: Assets/Scenes/StageYokoshoji.unity
+    guid: bc850b219a9647a499a132c2510813a9
+  - enabled: 1
     path: Assets/Scenes/Credit.unity
     guid: 00ffab5334029bc419086cc36f293715
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 5ef9f02d16594714c8538b82e61ae35e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HowToPlay.unity
     guid: 9508cfc205ad54f419b6bb170b08c588
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Result.unity
     guid: b58d859e8fb57c74fb006491bfb4cac0
-  - enabled: 0
-    path: Assets/Scenes/Stage.unity
-    guid: 36ee4a775ac0a7e48b216143634509ea
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StageSelect.unity
     guid: 48202d386da89844ea49d27c92a8423d
-  - enabled: 1
-    path: Assets/Scenes/ChacSceneTamplate/StageTemple/SceneTemp.unity
-    guid: 1b172a12109905f488e01c626a632544
   m_configObjects: {}

@@ -3,7 +3,8 @@ guid: 7a99b39f10cc5d547a1959d1d873f845
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _sceneChangeSound: {fileID: 8300000, guid: 2c76608b9fd138c4d968f9cc727b5741, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

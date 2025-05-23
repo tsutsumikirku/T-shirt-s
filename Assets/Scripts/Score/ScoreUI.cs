@@ -13,6 +13,6 @@ public class ScoreUI : MonoBehaviour
     public void ScoreUIUpdate(int score)
     {
         Debug.Log("Score");
-        _scoreUI.text="Score�F" + score;
+        _scoreUI.text="Score : " + score.ToString("0000");
     }
 }

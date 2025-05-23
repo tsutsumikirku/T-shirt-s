@@ -7,7 +7,6 @@ using UnityEngine;
 public class DamageHit : MonoBehaviour
 {
     [SerializeField]LayerMask _enemyLayer;
-    [SerializeField] AudioClip _hitSE;
     Rigidbody2D _rigidbody2D;
     private void Awake()
     {
@@ -17,7 +16,6 @@ public class DamageHit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            SoundManager.Instance.PlaySE(_hitSE);
             Debug.Log("Hit");
             int hitDamage = collision.gameObject.GetComponent<EnemyBase>().AttackPower;
             GameDataManager.Instance.Damage(hitDamage);

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _score: 3
-  _clip: {fileID: 8300000, guid: 9bc555687b2bc144daa8f0b3ab6da267, type: 3}
+  _clip: {fileID: 8300000, guid: c8ce2a31bc42789479ac88595f526979, type: 3}
 --- !u!58 &4044908804854021343
 CircleCollider2D:
   m_ObjectHideFlags: 0
