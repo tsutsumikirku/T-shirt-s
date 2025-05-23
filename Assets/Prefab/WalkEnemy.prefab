@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 320709906311357988}
   - component: {fileID: 4250769293930987615}
   - component: {fileID: 2672517208511619261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WalkEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5286360752019992655}
   - component: {fileID: 4551098266386571296}
   - component: {fileID: 2252977591876358401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuteMonster_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7507831077292455396}
   - component: {fileID: 699141839651993508}
+  - component: {fileID: 6970325614556038974}
   - component: {fileID: 7115021311669523579}
   - component: {fileID: 326385704725693558}
   - component: {fileID: 4977697195367128162}
@@ -125,7 +126,7 @@ GameObject:
   - component: {fileID: 8210784581396460258}
   - component: {fileID: 4813246597507250061}
   - component: {fileID: 8378889974269802936}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -164,6 +165,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colorLength: 0
   _color: 0
+--- !u!114 &6970325614556038974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610887201313030334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbece391cecfd743a019c5e17293d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStepOn: 0
+  _jumpPower: 10.7
 --- !u!114 &7115021311669523579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f37e35568be9af4e9654106bbe059db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  _hitSE: {fileID: 0}
 --- !u!114 &326385704725693558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e7cb9f92310c1449ee5a90539c5cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
+  _moveSpeed: 16.82
 --- !u!114 &5881472826749193582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8e931235a76a48a16d3ac561f9c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 0}
+  m_Clip: {fileID: 8300000, guid: 2c76608b9fd138c4d968f9cc727b5741, type: 3}
   JumpPower: 5
   Jumpcount: 1
 --- !u!114 &370897730911456911
@@ -321,7 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6872120575803785557}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8022811876209511183}
   - component: {fileID: 2886873228482703496}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuteMonster_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6810681067331573776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +492,7 @@ GameObject:
   - component: {fileID: 1492435672085651448}
   - component: {fileID: 614054402179182360}
   - component: {fileID: 1704084250896016395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuteMonster_LeftEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7079426382381387876}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3211815344041446576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7949464215603265993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7130872858483732739}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8984499369227845757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,7 +760,7 @@ GameObject:
   - component: {fileID: 5057029192697414089}
   - component: {fileID: 6442747941969335017}
   - component: {fileID: 974313277158072435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuteMonster_RightEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6904863568126601082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6487597952995672554}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8433874930119542982}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3833669879106132247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5479622832682815909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +1028,7 @@ GameObject:
   - component: {fileID: 1297375715701109728}
   - component: {fileID: 2259017130407629662}
   - component: {fileID: 7223839101895646776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuteMonster_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4006403303973757569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5581402244758226327}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
