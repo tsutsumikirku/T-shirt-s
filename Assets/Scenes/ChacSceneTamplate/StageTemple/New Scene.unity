@@ -1219,7 +1219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnObjects:
   - {fileID: 1079701842}
-  - {fileID: 0}
 --- !u!4 &2012630104
 Transform:
   m_ObjectHideFlags: 0
