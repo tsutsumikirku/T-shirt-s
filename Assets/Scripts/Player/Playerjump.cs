@@ -14,18 +14,6 @@ public class PlayerJump : MonoBehaviour, IPlayerMover
     public void PlayerUpdate()
     {
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _rd = GetComponent<Rigidbody2D>();
-        _curretJumpcount =Jumpcount ;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         if (Input.GetButtonDown("Jump"))
         {
             if (_curretJumpcount > 0)
@@ -36,13 +24,19 @@ public class PlayerJump : MonoBehaviour, IPlayerMover
             }
 
         }
+    }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        _rd = GetComponent<Rigidbody2D>();
+        _curretJumpcount =Jumpcount ;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Box"))
             {
-            _curretJumpcount=Jumpcount;
+                _curretJumpcount=Jumpcount;
             }
 
     }

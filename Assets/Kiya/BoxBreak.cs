@@ -1,25 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoxBreak : MonoBehaviour
+public class BoxBreak : MonoBehaviour, StepOnInterface
 {
     [SerializeField] int _boxLife;
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnStep()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-    
+        Console.WriteLine("Box broken");
+        _boxLife--;
+        if (_boxLife <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
